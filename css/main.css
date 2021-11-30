@@ -75,7 +75,7 @@ img {
 }
 
 .hero {
-  background: url(/img/beats.png) left 70% center no-repeat;
+  background: url(../img/beats.png) left 70% center no-repeat;
   background-color: #F5F5F5;
   height: 100vh;
   min-height: 630px;
@@ -86,7 +86,7 @@ img {
   position: absolute;
   bottom: -28px;
   left: 75.5%;
-  content: url(/img/decor/decor-stick.png);
+  content: url(../img/decor/decor-stick.png);
 }
 
 .hero__title-section {
@@ -283,7 +283,7 @@ img {
   padding: 0 3%;
 }
 .benefits__item::before {
-  content: url(/img/decor/separator.png);
+  content: url(../img/decor/separator.png);
   position: absolute;
   top: 64px;
   left: -21.5%;
@@ -346,7 +346,7 @@ img {
 }
 .benefits-section:before {
   position: absolute;
-  background: url(/img/decor/decor-triangle.png);
+  background: url(../img/decor/decor-triangle.png);
   content: "";
   width: 37px;
   height: 37px;
@@ -457,7 +457,7 @@ img {
 }
 
 .order-section {
-  background: url(/img/order-background.png);
+  background: url(../img/order-background.png);
   color: #fff;
 }
 
