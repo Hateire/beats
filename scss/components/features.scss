@@ -3,9 +3,14 @@
 }
 
 .fetures__item {
-    margin-right: 8px;
+    margin-right: rem(8px);
 
     &:last-child {
         margin-right: 0;
     }
+}
+
+.feature__icon {
+    width: 40px;
+    height: 40px;
 }

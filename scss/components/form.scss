@@ -1,33 +1,41 @@
-.order-section {
-    background: url(../img/order-background.png) bottom center no-repeat #181818;
-    color: #fff;
-}
-
 .form {
     display: flex;
+
+    @include tablets {
+        flex-direction: column;
+        padding: 0 18%;
+    }
+
+    @include phones {
+        padding: 0;
+    }
 }
 
 .form__col {
     flex: 1;
-    margin-right: 30px;
+    margin-right: rem(30px);
 
     &:last-child {
+        margin-right: 0;
+    }
+
+    @include tablets {
         margin-right: 0;
     }
 }
 
 .form__row {
     display: flex;
-    margin-bottom: 9px;
+    margin-bottom: rem(9px);
 
     &--textarea {
-        margin-bottom: 28px;
+        margin-bottom: rem(28px);
     }
 }
 
 .form__block {
     flex: 1;
-    margin-right: 15px;
+    margin-right: rem(15px);
 
     &:last-child {
         margin-right: 0;
@@ -35,22 +43,26 @@
 }
 
 .form__title {
-    font-size: 16px;
-    line-height: 18,5px;
-    margin-bottom: 5px;
+    font-size: rem(16px);
+    line-height: 18,rem(5px);
+    margin-bottom: rem(5px);
 }
 
 .form__input {
     width: 100%;
     border: none;
-    padding: 14px 0px 15px 18px;
-    border: solid 3px transparent;
-    border-radius: 5px;
+    padding: rem(14px) rem(0px) rem(15px) rem(18px);
+    border: solid rem(3px) transparent;
+    border-radius: rem(5px);
 
     &--textarea {
-        height: 152px;
-        width: 450px;
+        height: rem(152px);
+        width: rem(450px);
         resize: none;
+
+        @include tablets {
+            width: 100%;
+        }
     }
 
     &:focus {
@@ -62,14 +74,20 @@
 .form__contorls {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 18px;
+    margin-bottom: rem(18px);
 
     &--margin-bottom_increase {
-        margin-bottom: 44px;
+        margin-bottom: rem(44px);
+    }
+
+    @include phones {
+        justify-content: center;
     }
 }
 
 .form__btns {
+    display: flex;
+    justify-content: center;
     position: relative;
-    left: -8px;
+    left: rem(-8px);
 }

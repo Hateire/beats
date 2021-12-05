@@ -2,7 +2,11 @@
     display: flex;
     cursor: pointer;
     user-select: none;
-    margin-right: 21px;
+    margin-right: rem(21px);
+
+    @include phones {
+        margin-bottom: rem(10px);
+    }
 
     &--checkbox {
         .radio__visible {
@@ -26,17 +30,17 @@
 }
 
 .radio__visible {
-    width: 25px;
-    height: 25px;
+    width: rem(25px);
+    height: rem(25px);
     position: relative;
     border-radius: 50%;
     background: #fff;
-    margin-right: 10px;
+    margin-right: rem(10px);
 
     &:before {
         content: "";
-        width: 13px;
-        height: 13px;
+        width: rem(13px);
+        height: rem(13px);
         background: $red;
         border-radius: 50%;
         position: absolute;
@@ -49,5 +53,5 @@
 
 .radio__title {
     color: #fff;
-    font-size: 16px;
+    font-size: rem(16px);
 }

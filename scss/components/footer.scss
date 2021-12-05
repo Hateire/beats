@@ -1,0 +1,16 @@
+.footer {
+    position: absolute;
+    display: flex;
+    background: #fff;
+    height: 86px;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include phones {
+        flex-direction: column;
+    }
+}

@@ -1,37 +1,11 @@
 .header {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 }
 
-.menu__list {
-    font-family: Alegreya Sans;
-    display: flex;
-    align-items: center;
-}
-
-.menu__item {
-    margin-right: 27px;
-
-    &:last-child {
-        margin-right: 0;
+.phone-number.header__phone-number {
+    @include tablets {
+        display: none;
     }
-}
-
-.phone-number {
-    font-size: 18px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    margin-right: 25px;
-}
-
-.phone-number__icon-element {
-    width: 14px;
-    height: 14px;
-    margin-right: 6px;
-}
-
-.menu__link {
-    text-decoration: none;
 }

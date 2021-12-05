@@ -6,7 +6,7 @@
 }
 
 .fixed-menu__item {
-    margin-bottom: 5px;
+    margin-bottom: rem(5px);
 
     &--active {
         .fixed-menu__link  {
@@ -16,18 +16,18 @@
 }
 
 .fixed-menu__link {
-    width: 19px;
-    height: 19px;
+    width: rem(19px);
+    height: rem(19px);
     border-radius: 50%;
-    border: 1px solid transparent;
+    border: rem(1px) solid transparent;
     display: block;
     position: relative;
 
     &:before {
         content: "";
         display: block;
-        width: 5px;
-        height: 5px;
+        width: rem(5px);
+        height: rem(5px);
         border-radius: 50%;
         background: #292929;
         position: absolute;

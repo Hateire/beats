@@ -1,32 +1,43 @@
 .rewiews__display {
     color: #666666;
     background: #F8FAF9;
-    padding: 42px;
+    padding: rem(42px);
     overflow: hidden;
     position: relative;
-    margin-bottom: 9px;
+    margin-bottom: rem(9px);
 
     &:before {
         content: "";
         display: block;
-        width: 83px;
-        height: 82px;
+        width: rem(83px);
+        height: rem(82px);
         background: #fff;
         border-radius: 50%;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        top: -65px;
+        top: rem(-65px);
     }
 }
 
 .rewiews__display-inner {
     display: flex;
+
+    @include tablets {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
 }
 
 .rewiews__avatar {
-    width: 253px;
-    height: 264px;
+    width: rem(253px);
+    height: rem(264px);
+
+    @include tablets {
+        width: rem(130px);
+        height: rem(130px);
+    }
 }
 
 .rewiews__avatar-img {
@@ -37,26 +48,37 @@
 
 .rewiews__content {
     flex: 1;
-    margin-left: 40px;
-    padding-top: 29px;
+    margin-left: rem(40px);
+    padding-top: rem(29px);
+
+    @include tablets {
+        margin-left: 0;
+        padding-top: rem(35px);
+    }
 }
 
 .rewiews__title {
-    font-size: 24px;
+    font-size: rem(24px);
     font-weight: bold;
-    margin-bottom: 25px;    
+    margin-bottom: rem(25px);    
     color: #000;
 }
 
 .rewiews__text {
-    margin-bottom: 40px;
-    font-size: 16px;
+    font-size: rem(16px);
     width: 83%;
     line-height: 1.1;
+    margin-bottom: rem(25px);
+
+    @include tablets {
+        margin: 0 auto;
+        width: 90%;
+        margin-bottom: 15px;
+    }
 }
 
 .rewiews__author {
-    font-size: 18px;
+    font-size: rem(18px);
     font-weight: bold;
     color: #000;
 }

@@ -1,9 +1,9 @@
 .btn {
-    font-size: 16px;
+    font-size: rem(16px);
     font-weight: bold;
-    padding: 18px 41px;
+    padding: rem(18px) rem(41px);
     text-transform: uppercase;
-    border-radius: 100px;
+    border-radius: rem(100px);
     line-height: 1;
     text-decoration: none;
     display: inline-block;
@@ -23,7 +23,7 @@
         background: transparent;
         color: #fff;
         text-transform: none;
-        padding: 0 10px;
+        padding: 0 rem(10px);
 
         &:hover {
             color: $red;

@@ -1,14 +1,22 @@
 .benefits-section {
     position: relative;
 
+    @include phones {
+        background: none;
+    }
+
     &:before {
         position: absolute;
         background: url(../img/decor/decor-triangle.png);
         content: "";
-        width: 37px; 
-        height: 37px;
-        bottom: -16px;
+        width: rem(37px); 
+        height: rem(37px);
+        bottom: rem(-16px);
         left: 17.7%;
         display: block;
+
+        @include phones {
+            display: none;
+        }
     }
 }
