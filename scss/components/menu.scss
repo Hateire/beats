@@ -1,0 +1,29 @@
+.menu {
+    margin: 0 30px;
+
+    @include tablets {
+        display: none;
+    }
+}
+
+.menu__list {
+    font-family: Alegreya Sans;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu__item {
+    margin-right: rem(27px);
+    margin-bottom: 10px;
+    padding-top: 5px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.menu__link {
+    text-decoration: none;
+    white-space: nowrap;
+}
