@@ -1,0 +1,14 @@
+.benefits-section {
+    position: relative;
+
+    &:before {
+        position: absolute;
+        background: url(../img/decor/decor-triangle.png);
+        content: "";
+        width: 37px; 
+        height: 37px;
+        bottom: -16px;
+        left: 17.7%;
+        display: block;
+    }
+}

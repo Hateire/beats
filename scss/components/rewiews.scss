@@ -1,0 +1,67 @@
+.rewiews__display {
+    color: #666666;
+    background: #F8FAF9;
+    padding: 42px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 9px;
+
+    &:before {
+        content: "";
+        display: block;
+        width: 83px;
+        height: 82px;
+        background: #fff;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -65px;
+    }
+}
+
+.rewiews__display-inner {
+    display: flex;
+}
+
+.rewiews__avatar {
+    width: 253px;
+    height: 264px;
+}
+
+.rewiews__avatar-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.rewiews__content {
+    flex: 1;
+    margin-left: 40px;
+    padding-top: 29px;
+}
+
+.rewiews__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 25px;    
+    color: #000;
+}
+
+.rewiews__text {
+    margin-bottom: 40px;
+    font-size: 16px;
+    width: 83%;
+    line-height: 1.1;
+}
+
+.rewiews__author {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+
+.rewiews__switcher {
+    display: flex;
+    justify-content: center;
+}
