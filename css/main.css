@@ -474,7 +474,7 @@ img {
     text-align: center;
   }
   .hero__title-section:before {
-    content: url(/img/beats-tablet.png);
+    content: url(../img/beats-tablet.png);
     margin-bottom: 40px;
   }
 }
