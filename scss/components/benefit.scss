@@ -9,10 +9,14 @@
 
 .benefit__image {
     margin-bottom: rem(25px);
+
+    @include tablets {
+        margin-bottom: rem(16px);
+    }
     
     @include phones {
         margin-bottom: 0;
-        margin-right: rem(20px);
+        margin-right: rem(10px);
     }
 }
 
@@ -26,10 +30,24 @@
     overflow: hidden;
 }
 
+.benefit__text {
+    @include phones {
+        padding-top: rem(10px);
+    }
+}
+
 .benefit__title {
     font-weight: bold;
-    font-size: rem(24px);
-    margin-bottom: 0;   
+    font-size: rem(23.4px);
+    margin-bottom: 0;
+    
+    @include tablets {
+        margin-bottom: rem(17px);
+    }
+    
+    @include phones {
+        margin-bottom: rem(3px);
+    }
 }
 
 .benefit__desc {
@@ -37,6 +55,11 @@
     color: #666666;
     line-height: 1.1;
     width: 93%;
+    margin: 0 auto;
+
+    @include phones {
+        width: 100%;
+    }
 }
 
 .benefit__icon {

@@ -1,12 +1,12 @@
 html {
     font-size: $baseFontSize;
 
-    @include tablets {
-        font-size: $baseFontSize - 1px;
-    }
+    // @include tablets {
+    //     font-size: $baseFontSize - 1px;
+    // }
 
     @include phones {
-        font-size: $baseFontSize - 2px;
+        font-size: 2.25vmax;
     }
 }
 

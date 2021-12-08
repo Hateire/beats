@@ -5,4 +5,8 @@
 
 .order-section__title {
     margin-bottom: rem(48px);
+
+    @include tablets {
+        margin-bottom: rem(20px);
+    }
 }

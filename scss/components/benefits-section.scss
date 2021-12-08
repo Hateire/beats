@@ -1,3 +1,11 @@
+.benefits-section__container {
+    width: 99%;
+
+    @include phones {
+        width: 95%;
+    }
+}
+
 .benefits-section {
     position: relative;
 

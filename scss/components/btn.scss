@@ -9,6 +9,14 @@
     display: inline-block;
     border: none;
 
+    @include tablets {
+        padding: rem(22px) rem(41px);
+    }
+
+    @include phones {
+        padding: rem(22px) rem(44px);
+    }
+
     &--theme--red {
         background: $red;
         color: #fff;
@@ -23,7 +31,7 @@
         background: transparent;
         color: #fff;
         text-transform: none;
-        padding: 0 rem(10px);
+        padding: 0 rem(8px) 0 rem(10px);
 
         &:hover {
             color: $red;

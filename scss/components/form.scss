@@ -3,7 +3,7 @@
 
     @include tablets {
         flex-direction: column;
-        padding: 0 18%;
+        padding: 0 17%;
     }
 
     @include phones {
@@ -28,8 +28,16 @@
     display: flex;
     margin-bottom: rem(9px);
 
+    @include tablets {
+        margin-bottom: rem(13px);
+    }
+
     &--textarea {
         margin-bottom: rem(28px);
+
+        @include tablets {
+            margin-bottom: rem(17px);
+        }
     }
 }
 
@@ -44,8 +52,13 @@
 
 .form__title {
     font-size: rem(16px);
-    line-height: 18,rem(5px);
+    // line-height: 18,rem(5px);
     margin-bottom: rem(5px);
+
+    @include tablets {
+        margin-bottom: rem(2px);
+        
+    }
 }
 
 .form__input {
@@ -55,6 +68,10 @@
     border: solid rem(3px) transparent;
     border-radius: rem(5px);
 
+    @include tablets {
+        padding: rem(5px) 0 rem(5px) rem(18px);
+    }
+
     &--textarea {
         height: rem(152px);
         width: rem(450px);
@@ -62,6 +79,7 @@
 
         @include tablets {
             width: 100%;
+            height: rem(82px);
         }
     }
 
@@ -74,10 +92,11 @@
 .form__contorls {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: rem(18px);
+    margin-bottom: rem(25px);
 
     &--margin-bottom_increase {
-        margin-bottom: rem(44px);
+        margin-bottom: rem(35px);
+        
     }
 
     @include phones {
@@ -90,4 +109,8 @@
     justify-content: center;
     position: relative;
     left: rem(-8px);
+
+    @include tablets {
+        left: 0;
+    }
 }
