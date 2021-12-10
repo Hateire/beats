@@ -1,7 +1,7 @@
 .rewiews__display {
     color: #666666;
     background: #F8FAF9;
-    padding: rem(53px) rem(18px) rem(37px);
+    padding: rem(44px) rem(18px) rem(37px) rem(40px);
     overflow: hidden;
     position: relative;
     margin-bottom: rem(22px);
@@ -68,7 +68,7 @@
     font-size: rem(16px);
     width: 83%;
     line-height: 1.1;
-    margin-bottom: rem(25px);
+    margin-bottom: rem(43px);
 
     @include tablets {
         margin: 0 auto;

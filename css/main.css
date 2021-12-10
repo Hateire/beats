@@ -546,10 +546,10 @@ img {
 }
 
 .hero__title-desc {
-  font-family: Play;
+  font-family: Alegreya Sans;
   font-size: 1.1666666667rem;
   line-height: 1.3888888889rem;
-  margin-bottom: 3.0555555556rem;
+  margin-bottom: 2.2777777778rem;
 }
 @media screen and (max-width: 768px) {
   .hero__title-desc {
@@ -600,6 +600,11 @@ img {
 .contacts {
   font-style: normal;
   font-size: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .contacts {
+    margin-left: 10px;
+  }
 }
 @media screen and (max-width: 480px) {
   .contacts {
@@ -777,6 +782,11 @@ img {
   margin-bottom: 1.3333333333rem;
   text-align: center;
   text-transform: uppercase;
+}
+@media screen and (max-width: 480px) {
+  .section__title {
+    font-size: 1.7777777778rem;
+  }
 }
 
 .headline {
@@ -991,7 +1001,7 @@ img {
 .rewiews__display {
   color: #666666;
   background: #F8FAF9;
-  padding: 2.9444444444rem 1rem 2.0555555556rem;
+  padding: 2.4444444444rem 1rem 2.0555555556rem 2.2222222222rem;
   overflow: hidden;
   position: relative;
   margin-bottom: 1.2222222222rem;
@@ -1071,7 +1081,7 @@ img {
   font-size: 0.8888888889rem;
   width: 83%;
   line-height: 1.1;
-  margin-bottom: 1.3888888889rem;
+  margin-bottom: 2.3888888889rem;
 }
 @media screen and (max-width: 768px) {
   .rewiews__text {
@@ -1237,7 +1247,7 @@ img {
   margin-bottom: 1.3888888889rem;
 }
 .form__contorls--margin-bottom_increase {
-  margin-bottom: 1.9444444444rem;
+  margin-bottom: 2.5555555556rem;
 }
 @media screen and (max-width: 480px) {
   .form__contorls {
@@ -1251,9 +1261,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   position: relative;
   left: -0.4444444444rem;
 }
@@ -1376,7 +1386,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   background: #fff;
-  height: 86px;
+  padding: 86px 0;
 }
 
 .footer__container {
@@ -1451,11 +1461,21 @@ img {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin-right: -30px;
+  margin-right: -1.6666666667rem;
+}
+@media screen and (max-width: 768px) {
+  .socials {
+    margin-right: 0.4444444444rem;
+  }
 }
 
 .socials__item {
-  margin-right: 10px;
+  margin-right: 0.5555555556rem;
+}
+@media screen and (max-width: 768px) {
+  .socials__item {
+    margin-right: 0.6666666667rem;
+  }
 }
 
 .socials__icon {

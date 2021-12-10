@@ -2,11 +2,19 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    margin-right: -30px;
+    margin-right: rem(-30px);
+
+    @include tablets {
+        margin-right: rem(8px);
+    }
 }
 
 .socials__item {
-    margin-right: 10px;
+    margin-right: rem(10px);
+
+    @include tablets {
+        margin-right: rem(12px)
+    }
 }
 
 .socials__icon {
