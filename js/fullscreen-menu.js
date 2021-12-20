@@ -1,13 +1,17 @@
 const hamburger = document.querySelector('.hamburger');
-const menu = document.querySelector(".fullscreen-menu");
-const closeBtn = menu.querySelector(".fullscreen-menu__close");
+const menu = document.querySelector(".menu");
 
 hamburger.addEventListener("click", e => {
-  e.preventDefault();
-  menu.classList.add("active");
-});
+    e.preventDefault();
 
-closeBtn.addEventListener("click", e => {
-  e.preventDefault();
-  menu.classList.remove("active");
-})
+    // if (hamburger.classList.contains("hamburger--active")) {
+    //     menu.classList.remove("menu--active");
+    //     hamburger.classList.remove("hamburger--active");
+    // } else {
+    //     menu.classList.add("menu--active");
+    //     hamburger.classList.add("hamburger--active");
+    // }
+
+    menu.classList.toggle("menu--active");
+    hamburger.classList.toggle("hamburger--active");
+});
