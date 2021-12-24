@@ -20,8 +20,21 @@
     }
 }
 
-.rewiews__display-inner {
+.rewiews__list {
+    position: relative;
+    min-height: 348px;
+}
+
+.rewiews__item {
     display: flex;
+    position: absolute;
+    transition: .3s;
+    opacity: 0;
+
+    &--active {
+        opacity: 1;
+        position: static;
+    }
 
     @include tablets {
         flex-direction: column;

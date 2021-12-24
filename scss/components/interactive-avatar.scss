@@ -6,6 +6,10 @@
     overflow: hidden;
     position: relative;
 
+    &:hover {
+        background-color: $red;
+    }
+
     &--active {
         border-color: $red;
     }

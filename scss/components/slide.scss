@@ -4,23 +4,31 @@
 
 .slider__container {
     position: relative;
+
+    .bx-wrapper {
+        border: 0;
+        background: transparent;
+        box-shadow: none;
+    }
 }
 
 .slider__button {
     position: absolute;
-    top: 50%;
+    top: 46%;
     transform: translate(-50%);
     border: 0;
     background: transparent;
     color: #f00;
+    cursor: pointer;
+    z-index: 40;
 
     &--prev {
-        left: -29px;
+        left: -57px;
         transform: scale(-1, 1);
     }
 
     &--next {
-        right: -31px;
+        right: -4px;
     }
 
     @include tablets {
@@ -58,7 +66,6 @@
 .slide {
     display: flex;
     align-content: flex-start;
-    padding-left: 2%;
 
     @include tablets {
         flex-direction: column;

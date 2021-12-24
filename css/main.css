@@ -1062,13 +1062,26 @@ img {
   top: -3.6111111111rem;
 }
 
-.rewiews__display-inner {
+.rewiews__list {
+  position: relative;
+  min-height: 348px;
+}
+
+.rewiews__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: absolute;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0;
+}
+.rewiews__item--active {
+  opacity: 1;
+  position: static;
 }
 @media screen and (max-width: 768px) {
-  .rewiews__display-inner {
+  .rewiews__item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1155,6 +1168,9 @@ img {
   border-radius: 50%;
   overflow: hidden;
   position: relative;
+}
+.interactive-avatar:hover {
+  background-color: #E01F3D;
 }
 .interactive-avatar--active {
   border-color: #E01F3D;
@@ -1561,23 +1577,31 @@ img {
 .slider__container {
   position: relative;
 }
+.slider__container .bx-wrapper {
+  border: 0;
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
 
 .slider__button {
   position: absolute;
-  top: 50%;
+  top: 46%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
   border: 0;
   background: transparent;
   color: #f00;
+  cursor: pointer;
+  z-index: 40;
 }
 .slider__button--prev {
-  left: -29px;
+  left: -57px;
   -webkit-transform: scale(-1, 1);
           transform: scale(-1, 1);
 }
 .slider__button--next {
-  right: -31px;
+  right: -4px;
 }
 @media screen and (max-width: 768px) {
   .slider__button {
@@ -1617,7 +1641,6 @@ img {
   display: flex;
   -ms-flex-line-pack: start;
       align-content: flex-start;
-  padding-left: 2%;
 }
 @media screen and (max-width: 768px) {
   .slide {
@@ -1867,5 +1890,135 @@ img {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+.team-container {
+  min-height: 37.2222222222rem;
+}
+
+.section__title-team {
+  margin-top: 1.6666666667rem;
+  margin-bottom: 2.5rem;
+}
+
+.team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.team--desktop .team__content {
+  position: absolute;
+  top: 100%;
+}
+
+.team__item {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 2%;
+  text-align: center;
+  max-width: 12.8333333333rem;
+}
+.team__item:last-child {
+  margin-right: 0;
+}
+
+.team__member {
+  height: 16rem;
+  margin-bottom: 1.6666666667rem;
+  height: 80%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.team__name {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5555555556rem;
+  position: relative;
+  text-decoration: none;
+}
+
+.team__triangle {
+  position: absolute;
+  top: 45%;
+  right: -1.1111111111rem;
+  border: 5px solid transparent;
+  border-top: 5px solid #E01F3D;
+}
+
+.team__triangle.open {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+  top: 25%;
+}
+
+.team__content {
+  width: 12.2222222222rem;
+  overflow: hidden;
+  -webkit-transition: height 0.3s;
+  transition: height 0.3s;
+  height: 0;
+}
+
+.team__position {
+  font-size: 0.8888888889rem;
+  font-weight: normal;
+  color: #292929;
+}
+
+.team__about {
+  font-size: 0.8888888889rem;
+  font-weight: normal;
+  color: #666666;
+}
+
+.modal {
+  display: none;
+}
+.modal.error-modal .modal__content {
+  color: red;
+}
+.modal.fancybox-content {
+  padding: 0 !important;
+}
+.modal .fancybox-button {
+  display: none;
+}
+
+.modal__container {
+  background: #fff;
+  padding: 1.9444444444rem 3.3333333333rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.input-error {
+  border-color: #E01F3D;
+}
+
+.modal__content {
+  margin-bottom: 0.8333333333rem;
+  color: #000;
 }
 /*# sourceMappingURL=main.css.map */
