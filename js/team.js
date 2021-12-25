@@ -6,7 +6,7 @@ const openItem = item => {
 
     container.addClass("active");
     contentBlock.height(reqHeight);
-}
+};
 
 const closeEveryItem = container => {
     const items = container.find(".team__content");

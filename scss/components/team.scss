@@ -11,12 +11,18 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
-.team--desktop .team__content {
+.team__content {
     position: absolute;
     top: 100%;
 }
+
 
 .team__item {
     position: relative;
@@ -36,6 +42,10 @@
     height: 80%;
     width: 100%;
     object-fit: cover;
+
+    @include tablets {
+        display: none;
+    }
 }
 
 .team__name {
@@ -68,10 +78,17 @@
     height: 0;
 }
 
+.team__content-block {
+    @include tablets {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 .team__position {
     font-size: rem(16px);
     font-weight: normal;
-    color: #292929
+    color: #292929;
 }
 
 .team__about {

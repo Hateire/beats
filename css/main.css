@@ -1911,8 +1911,19 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+@media screen and (max-width: 768px) {
+  .team {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 
-.team--desktop .team__content {
+.team__content {
   position: absolute;
   top: 100%;
 }
@@ -1937,6 +1948,11 @@ img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .team__member {
+    display: none;
+  }
 }
 
 .team__name {
@@ -1971,6 +1987,17 @@ img {
   -webkit-transition: height 0.3s;
   transition: height 0.3s;
   height: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .team__content-block {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .team__position {
