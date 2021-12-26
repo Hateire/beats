@@ -4,7 +4,7 @@
 
 .section__title-team {
     margin-top: rem(30px);
-    margin-bottom: rem(45px);
+    margin-bottom: rem(25px);
 }
 
 .team {
@@ -48,12 +48,20 @@
     }
 }
 
+.team__member-mobile {
+    display: none;
+
+    @include tablets {
+        display: flex;
+    }
+}
+
 .team__name {
     display: inline-flex;
     color: #000;
     font-size: rem(18px);
     font-weight: 700;
-    margin-bottom: rem(10px);
+    margin-bottom: rem(16px);
     position: relative;
     text-decoration: none;
 }
@@ -72,6 +80,7 @@
 }
 
 .team__content {
+    position: relative;
     width: rem(220px);
     overflow: hidden;
     transition: height .3s;
@@ -80,6 +89,8 @@
 
 .team__content-block {
     @include tablets {
+        display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
