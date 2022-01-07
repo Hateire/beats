@@ -1307,6 +1307,11 @@ img {
 .form__contorls--margin-bottom_increase {
   margin-bottom: 2.5555555556rem;
 }
+@media screen and (max-width: 768px) {
+  .form__contorls {
+    margin-bottom: 1.6666666667rem;
+  }
+}
 @media screen and (max-width: 480px) {
   .form__contorls {
     -webkit-box-pack: center;
@@ -1327,7 +1332,7 @@ img {
 }
 @media screen and (max-width: 768px) {
   .form__btns {
-    left: 0;
+    left: 6.2222222222rem;
   }
 }
 
@@ -1993,12 +1998,17 @@ img {
 }
 
 .team__content {
-  position: relative;
+  position: absolute;
   width: 12.2222222222rem;
   overflow: hidden;
   -webkit-transition: height 0.3s;
   transition: height 0.3s;
   height: 0;
+}
+@media screen and (max-width: 768px) {
+  .team__content {
+    position: relative;
+  }
 }
 
 @media screen and (max-width: 768px) {

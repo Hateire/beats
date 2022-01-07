@@ -80,11 +80,15 @@
 }
 
 .team__content {
-    position: relative;
+    position: absolute;
     width: rem(220px);
     overflow: hidden;
     transition: height .3s;
     height: 0;
+    
+    @include tablets {
+        position: relative;
+    }
 }
 
 .team__content-block {

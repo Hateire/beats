@@ -99,6 +99,10 @@
         
     }
 
+    @include tablets {
+        margin-bottom: rem(30px);
+    }
+
     @include phones {
         justify-content: center;
     }
@@ -111,6 +115,6 @@
     left: rem(-8px);
 
     @include tablets {
-        left: 0;
+        left: rem(112px);
     }
 }
