@@ -1,0 +1,32 @@
+.side-info {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    opacity: 0;
+    background: #D5D5D5;
+    box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+    padding: 18px 13px 24px;
+    min-width: 273px;
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.side-info__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.side-info__icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+}
+
+.side-info__text {
+    flex: 1;
+}

@@ -1,0 +1,12 @@
+.order-section {
+    background: url(../img/background/order-background.png) bottom center no-repeat #181818;
+    color: #fff;
+}
+
+.order-section__title {
+    margin-bottom: rem(48px);
+
+    @include tablets {
+        margin-bottom: rem(20px);
+    }
+}

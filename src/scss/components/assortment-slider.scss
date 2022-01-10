@@ -1,0 +1,40 @@
+.assortment-slider {
+    position: relative;
+    height: 100%;
+  
+    .bx-wrapper {
+      border: 0;
+      background: transparent;
+      box-shadow: none;
+    }
+  }
+  
+  .product-slider__arrow {
+    background: url(".././images/icons/arrow.svg") center center no-repeat;
+    background-size: contain;
+    display: block;
+    width: rem(13px);
+    height: rem(28px);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  
+    &--direction--next {
+      right: 0;
+    }
+  
+    &--direction--prev {
+      left: 0;
+      transform: rotate(-180deg);
+    }
+  }
+  
+  
+  
+  .assortment-slider__icon {
+    width: rem(14px);
+    height: rem(26px);
+    display: block;
+    fill: black;
+  }

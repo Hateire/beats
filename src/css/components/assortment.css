@@ -1,0 +1,111 @@
+.assortment-menu-section {
+  background: url("/img/background/assortment-background.png") center center/cover no-repeat;
+  position: relative;
+  color: #fff;
+}
+.assortment-menu-section:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.assortment-menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.assortment-menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.assortment-menu__title {
+  position: relative;
+  width: rem(102px);
+}
+.assortment-menu__title:after {
+  content: "";
+  display: block;
+  top: 0;
+  bottom: rem(0px);
+  left: 0;
+  right: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.1);
+}
+.assortment-menu__title-theme-grey {
+  background: #999999;
+}
+.assortment-menu__title-theme-black {
+  background: #151515;
+}
+.assortment-menu__title-theme-red {
+  background: #E01F3C;
+}
+
+.section__title.assortment-menu-section__title {
+  position: absolute;
+  top: rem(90px);
+  left: rem(80px);
+  color: #fff;
+}
+
+.assortment-menu__text {
+  font-family: Alegreya Sans;
+  font-size: rem(36px);
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: rotate(-90deg) translateY(-50%);
+          transform: rotate(-90deg) translateY(-50%);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  white-space: nowrap;
+  text-align: left;
+  font-weight: bold;
+}
+
+.assortment-menu__content {
+  background: rgba(51, 53, 55, 0.9);
+  width: 0;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+.assortment-menu__container {
+  padding: rem(40px) rem(73px) rem(45px) rem(26px);
+}
+
+.assortment-menu__close {
+  position: absolute;
+  top: rem(20px);
+  right: rem(25px);
+  border: none;
+  background: transparent;
+}
+
+.assortment-menu__close-icon {
+  width: rem(18px);
+  height: rem(18px);
+  display: block;
+  fill: #c2c3c4;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.assortment-menu__close-icon:hover {
+  opacity: 0.3;
+}
