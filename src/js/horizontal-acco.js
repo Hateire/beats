@@ -1,9 +1,9 @@
-(function () {
+(function() {
     const closeEveryItemInContainer = (container) => {
         const items = container.find(".assortment-menu__item");
         const content = container.find(".assortment-menu__content");
 
-        items.removeClass("active");
+        items.removeClass("assortment-menu__item--active");
         content.width(0);
     };
 
@@ -16,12 +16,17 @@
         const paddingLeft = parseInt(textContainer.css("padding-left"));
         const paddingRight = parseInt(textContainer.css("padding-right"));
 
-        const isMobile = window.matchMedia("(max-width: 768px)");
-
-        if (isMobile.matches) {
-            itemWidth = screenWidth - titlesWidth
-        } else {
-            itemWidth = 500
+        const isTablet = window.matchMedia("(max-width: 768px)").matches;
+        const isMobile = window.matchMedia("(max-width: 480px)").matches;
+        
+        if (isTablet) {
+            itemWidth = screenWidth - titlesWidth;
+        }
+        if (isMobile) {
+            itemWidth = screenWidth - block.find(".assortment-menu__title").width();
+        }
+        if (!isTablet && !isMobile) {
+            itemWidth = 500;
         }
 
         return {
@@ -56,29 +61,6 @@
             openItem(item);
         }
     });
-
-    (function () {
-        const menuBtn = $('assortment-menu__title');
-
-        $(document).ready(() => {
-            for (let i = 0; i < menuBtn.length; i++) {
-                const element = menuBtn[i];
-
-                element.addEventListener('click', e => {
-                    e.preventDefault();
-
-                    for (let index = 0; index < menuBtn.length; index++) {
-                        const element = menuBtn[index];
-
-                        if (element !== e.currentTarget) {
-                            element.closest('.assortment-menu__item').classList.remove('assortment-menu__item--active');
-                        }
-                    }
-                    element.closest('.assortment-menu__item').classList.toggle('assortment-menu__item--active');
-                });
-            }
-        });
-    })();
 
     $(".assortment-menu__close").click((e) => {
         e.preventDefault();

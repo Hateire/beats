@@ -31,10 +31,11 @@
         @include phones {
             position: absolute;
             top: 0;
-            left: 0;
+            left: -276px;
             bottom: 0;
             right: 0;
             z-index: 80;
+            transition: width 0.5s;
         }
     }
 }
@@ -52,6 +53,7 @@
         right: 0;
         position: absolute;
         background: rgba(0, 0, 0, 0.1);
+        transition: 0.5s;
     }
 
     &-theme-grey {
