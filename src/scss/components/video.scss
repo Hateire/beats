@@ -51,18 +51,21 @@ $gfz: 18px;
 }
 
 .video__player {
-    width: 100%;
+    width: 70%;
     height: 100%;
     display: block;
+    margin: auto;
 }
 
 .video__toolbar {
-    width: 100%;
+    width: 70%;
     height: 35px;
     background-color: #151515;
     display: flex;
     z-index: 2;
     flex-shrink: 0;
+    margin: auto;
+    margin-top: 0;
 }
 
 .duration__btn-wrap {

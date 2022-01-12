@@ -30,13 +30,37 @@
         }
     };
 
+
+    (function () {
+        const menuBtn = $('assortment-menu__title');
+
+        $(document).ready(() => {
+            for (let i = 0; i < menuBtn.length; i++) {
+                const element = menuBtn[i];
+
+                element.addEventListener('click', e => {
+                    e.preventDefault();
+
+                    for (let index = 0; index < menuBtn.length; index++) {
+                        const element = menuBtn[index];
+
+                        if (element !== e.currentTarget) {
+                            element.closest('.assortment-menu__item').classList.remove('assortment-menu__item--active');
+                        }
+                    }
+                    element.closest('.assortment-menu__item').classList.toggle('assortment-menu__item--active');
+                });
+            }
+        });
+    })();
+
     const openItem = (item) => {
         const hiddenBlock = item.find(".assortment-menu__content");
         const reqWidth = measureWidth(item).container;
         const textBlock = item.find(".assortment-menu__container");
         const textBlockWidth = measureWidth(item).textContainer;
 
-        item.addClass("active");
+        item.addClass("--active");
         hiddenBlock.width(reqWidth);
         textBlock.width(textBlockWidth)
     };
