@@ -493,7 +493,7 @@ img {
   .assortment-menu__item--active {
     position: absolute;
     top: 0;
-    left: -276px;
+    left: rem(-276px);
     bottom: 0;
     right: 0;
     z-index: 80;
